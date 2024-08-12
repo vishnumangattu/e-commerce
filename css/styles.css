@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.heading{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 100%;
+  height: 50%;
+  background-color: rgb(25, 50, 212);
+  color: white;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.heading img{
+width:30px;
+margin-left: 20px;
+margin-right: 20px;
+}
+.right
+{
+  display: flex;
+}
+.cart-logo{
+  padding-right: 20px;
+ margin-right: 20px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+.heading h2{
+  margin-left: 10px;
+  font-size: 35px
+}
+
+#search{
+  padding: 8px 8px;
+  border-radius: 100px;
+  margin-right: 50px;
+  width: 300px;
+  margin-top: 5px;
+  background-image: url(../images/search\ logo.png);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  padding-left: 20px;
+  background-position:left;
+  background-position-x: 50px;
+  text-align: center;
+}
+.men-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+      position: relative;
+      gap: 20px;
+      padding-bottom: 35px;
+      justify-content: center;
+  }
+  .men-card{
+    box-shadow: rgba(66, 65, 65, 0.35) 0px 5px 15px;
+    padding: 20px 20px;
+    width: 250px;
+    padding-bottom: 40px;
+  }
+  .men-card a{
+    text-decoration: none;
+    text-decoration-color:black;
+  }
+  .men-card:hover{
+   background-color: rgba(227, 232, 186, 0.593);
+  }
+  .category{
+    color: grey;
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+
+  .content h4{
+    
+    font-size: 18px;
+
+  }
+  .discount-price{
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+
+  }
+  .discount-percentage{
+    color: rgb(241, 35, 35);
+    margin-right: 10px;
+    font-weight: 600 ;
+    font-size: 20px;
+
+    
+
+  }
+
+  .original-price {
+    text-decoration: line-through;
+    color: grey;
+    margin-right: 10px;
+    font-size: 20px;
+   
+
+
+  }
+  .ratings{
+    border: none;
+    background-color: rgb(49, 165, 49);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+
+    
+    
+    
+  }
+  
+
+  .view-more{
+    border: none;
+    color:white;
+    margin-top: 20px;
+    background-color:rgb(81, 57, 215);
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    
+
+  }
+  .view-more:hover{
+    background-color: #29b020;
+    font-weight: bolder;
+    box-shadow: rgba(104, 100, 100, 0.35) 0px 5px 15px;
+  }
+
+  .image img{
+    width:12em ;
+    height: 18em;
+    object-fit: cover;
+    background-size: cover;
+    
+  }
+
+  ::-webkit-scrollbar {
+    width: 1px; 
+    scrollbar-width:thin;
+}
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* color of the track */
+    border-radius: 8px; /* roundness of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0e3051; /* color of the draggable part */
+    border-radius: 10px; /* roundness of the thumb */
+}
+/* hide the scrollbar arrow in Edge */
+/* vertical scrollbar */
+::-webkit-scrollbar-thumb:vertical {
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+/* horizontal scrollbar */
+::-webkit-scrollbar-thumb:horizontal {
+    border: 4px solid transparent;
+    background-clip: content-box;
+}
+
+/* Product style  */
+
+.product{
+  width: 100%;
+  height: 80vh;
+  /* background-color: rgb(241, 239, 238); */
+  position: relative;
+
+}
+.pro-cards{
+position: absolute;
+top: 2%;
+left: 1%;
+}
+.pro-card{
+  width: 4rem;
+  height: 4rem;
+  /* border: 2px solid red; */
+  margin: 10px;
+  box-shadow:  rgba(0, 0, 0, 0.40) 0px 5px 15px;
+
+}
+
+.pro-card img{
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+}
+
+.pro-pic{
+  height: 28rem;
+  width: 20rem;
+  position: absolute;
+  background-color: rgba(243, 236, 236, 0.6);
+  top: 3%;
+  left: 9%;
+  box-shadow:  rgba(0, 0, 0, 0.40) 0px 5px 15px;
+
+}
+.pro-pic img{
+  width: 25rem;
+  width: 20rem;
+}
+
+.pro-content{
+  position: absolute;
+  top: 4%;
+  left: 35%;
+}
+.pro-btn{
+  border: none;
+  background-color: rgb(18, 104, 18);
+  color: white;
+  padding: 3px 12px;
+  border-radius: 5px;
+}
+
+.last-btn1{
+  border: none;
+  background-color: orange;
+  padding: 10px 40px;
+  margin-left: 35px;
+  font-weight: bolder;
+  border-radius: 6px;
+ 
+ 
+}
+.last-btn2{
+  border: none;
+  background-color: rgb(179, 96, 46);
+  padding: 10px 40px;
+  margin-left: 35px;
+  font-weight: bolder;
+
+  border-radius: 6px;
+ 
+ 
+}
