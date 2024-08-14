@@ -21,6 +21,10 @@ margin-right: 20px;
 {
   display: flex;
 }
+.right img{
+width: 40px;
+height: 40px;
+}
 .cart-logo{
   padding-right: 20px;
  margin-right: 20px;
@@ -38,6 +42,7 @@ margin-right: 20px;
   border-radius: 100px;
   margin-right: 50px;
   width: 300px;
+  border: none;
   margin-top: 5px;
   background-image: url(../images/search\ logo.png);
   background-repeat: no-repeat;
@@ -49,8 +54,9 @@ margin-right: 20px;
 }
 .men-cards{
     display: flex;
+    margin: 10px 100px;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 50px;
       position: relative;
       gap: 20px;
       padding-bottom: 35px;
@@ -78,21 +84,22 @@ margin-right: 20px;
   .content h4{
     
     font-size: 18px;
+    color:rgb(50, 4, 110);
 
   }
   .discount-price{
     color: rgb(0, 0, 0);
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     margin-right: 10px;
 
   }
   .discount-percentage{
-    color: rgb(241, 35, 35);
+    color: rgb(41, 158, 26);
     margin-right: 10px;
     font-weight: 600 ;
-    font-size: 20px;
+    font-size: 15px;
 
     
 
@@ -102,7 +109,7 @@ margin-right: 20px;
     text-decoration: line-through;
     color: grey;
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 18px;
    
 
 
@@ -177,12 +184,20 @@ margin-right: 20px;
 }
 
 /* Product style  */
-
-.product{
+.main-pro
+{
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.product{
+  margin-top: 20px;
+  width: 90%;
   height: 80vh;
   /* background-color: rgb(241, 239, 238); */
   position: relative;
+  box-shadow:  rgba(0, 0, 0, 0.40) 0px 5px 15px;
+  border-radius: 10px;
 
 }
 .pro-cards{
@@ -196,6 +211,7 @@ left: 1%;
   /* border: 2px solid red; */
   margin: 10px;
   box-shadow:  rgba(0, 0, 0, 0.40) 0px 5px 15px;
+
 
 }
 
@@ -212,7 +228,8 @@ left: 1%;
   background-color: rgba(243, 236, 236, 0.6);
   top: 3%;
   left: 9%;
-  box-shadow:  rgba(0, 0, 0, 0.40) 0px 5px 15px;
+  /* border: 1px solid rgba(90, 76, 76, 0.329); */
+  border-radius: 10px;
 
 }
 .pro-pic img{
@@ -222,22 +239,24 @@ left: 1%;
 
 .pro-content{
   position: absolute;
+width: 80%;
   top: 4%;
   left: 35%;
+  margin-left: 20px;
 }
 .pro-btn{
   border: none;
   background-color: rgb(18, 104, 18);
   color: white;
-  padding: 3px 12px;
+  padding: 5px 12px;
   border-radius: 5px;
 }
 
 .last-btn1{
   border: none;
   background-color: orange;
-  padding: 10px 40px;
-  margin-left: 35px;
+  padding: 15px 40px;
+  margin-left: 25px;
   font-weight: bolder;
   border-radius: 6px;
  
@@ -245,12 +264,11 @@ left: 1%;
 }
 .last-btn2{
   border: none;
-  background-color: rgb(179, 96, 46);
-  padding: 10px 40px;
-  margin-left: 35px;
+  background-color: rgb(241, 80, 5);
+  padding: 15px 40px;
+  margin-left: 15px;
   font-weight: bolder;
-
+color: white;
   border-radius: 6px;
- 
- 
+
 }

@@ -16,7 +16,7 @@ async function getProducts(){
             <h4>${item.title.length>=20?`${item.title.substring(0,20)}...`:item.title}</h4>
              <div> <span><button class="ratings">${item.rating} <span><i class="fa-solid fa-star"></i></span></button></span></div>
              <span class="discount-price">$${item.price}</span>
-           <span class="original-price">$${Math.ceil(item.price*100/item.discountPercentage)}</span>
+           <span class="original-price">$${Math.ceil(item.price+(item.price*item.discountPercentage/100))}</span>
              <span class="discount-percentage">${item.discountPercentage}% OFF</span>
             <div>
          </a>
@@ -46,7 +46,8 @@ document.getElementById("search").addEventListener("keyup",async(e)=>{
         // console.log(data);
         str=``
         search.map((item)=>{
-          str+=`<div class="men-card">
+          str+=`<a href="./pages/product.html?id=${item.id}" style="text-decoration: none;">
+          <div class="men-card">
           <div class="image">
             <img src="${item.thumbnail}" alt="">
           </div>
@@ -63,12 +64,12 @@ document.getElementById("search").addEventListener("keyup",async(e)=>{
 
            
             <div>
-            <a href="./pages/product.html?id=${item.id}"><button class="view-more" >View More</button> </a>
+            
             </div>
             
           </div>
           
-        </div>`
+        </div></a>`
 
         })
         document.getElementById("products").innerHTML=str
